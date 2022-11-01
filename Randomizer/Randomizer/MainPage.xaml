@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Randomizer.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="RANDOMIZER!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Type range numbers" FontSize="Title" Padding="30,10,30,10"/>
+        <Entry x:Name="txtMin" Placeholder="Min"></Entry>
+        <Entry x:Name="txtMax" Placeholder="Max"></Entry>
+        <Label x:Name="lblTxt" FontSize="Title" Padding="30,10,30,10" HorizontalTextAlignment="Center" TextColor="LightGreen"/>
+        <Button x:Name="btnRand" Text="Press to randomize" BackgroundColor="Magenta" Clicked="BtnRand_Clicked"></Button>
+        <Editor x:Name="txtRand" HeightRequest = "250" IsEnabled="True"></Editor>
+    </StackLayout>
+
+</ContentPage>
